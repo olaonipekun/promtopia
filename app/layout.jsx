@@ -1,5 +1,7 @@
 import '@styles/globals.css';
 import { Inter } from 'next/font/google';
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +22,7 @@ const RootLayout = ({children}) => {
             </div>
 
             <main className='app'>
+                <Nav />
                 {children}
             </main>
         </body>
